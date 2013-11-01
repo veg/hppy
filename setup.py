@@ -18,6 +18,6 @@ setup(name='hppy',
       url='http://github.com/nlhepler/hppy',
       license='GNU GPL version 3',
       packages=['hppy'],
-      package_dir={'hppy': 'lib/hppy'},
+      package_dir={'': 'lib'},
       requires=['HyPhy (>=0.1)', 'fakemp']
      )
