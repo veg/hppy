@@ -1,4 +1,4 @@
-#!/usr/bin/env python
+#!/usr/bin/env python3
 
 from __future__ import division, print_function
 
@@ -8,10 +8,9 @@ from os.path import abspath, join, split
 from setuptools import setup
 
 sys.path.insert(0, join(split(abspath(__file__))[0], 'lib'))
-from hppy import __version__ as _hppy_version
 
 setup(name='hppy',
-      version=_hppy_version,
+      version='0.9.6',
       description='An intuitive HyPhy interface for Python',
       author='N Lance Hepler',
       author_email='nlhepler@gmail.com',
@@ -19,5 +18,10 @@ setup(name='hppy',
       license='GNU GPL version 3',
       packages=['hppy'],
       package_dir={'': 'lib'},
-      requires=['HyPhy (>=0.1)', 'fakemp']
+      dependency_links = ['git+git://github.com/veg/hyphy-python.git#egg=HyPhy-0.1.1'],
+      install_requires=[
+          'HyPhy >=0.1.1',
+          'Cython >=0.22.1',
+          'fakemp >= 0.9.1'
+      ]
      )
