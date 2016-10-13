@@ -10,7 +10,7 @@ from setuptools import setup
 sys.path.insert(0, join(split(abspath(__file__))[0], 'lib'))
 
 setup(name='hyphy-helper',
-      version='0.9.7',
+      version='0.9.8',
       description='An intuitive HyPhy interface for Python',
       author='N Lance Hepler',
       author_email='nlhepler@gmail.com',
@@ -19,7 +19,7 @@ setup(name='hyphy-helper',
       packages=['hppy'],
       package_dir={'': 'lib'},
       install_requires=[
-          'HyPhy >=0.1.1',
+          'hyphy-python >=0.1.1',
           'Cython >=0.22.1',
           'fakemp >= 0.9.1'
       ]
