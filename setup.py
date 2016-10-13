@@ -9,7 +9,7 @@ from setuptools import setup
 
 sys.path.insert(0, join(split(abspath(__file__))[0], 'lib'))
 
-setup(name='hppy',
+setup(name='hyphy-helper',
       version='0.9.6',
       description='An intuitive HyPhy interface for Python',
       author='N Lance Hepler',
@@ -18,7 +18,6 @@ setup(name='hppy',
       license='GNU GPL version 3',
       packages=['hppy'],
       package_dir={'': 'lib'},
-      dependency_links = ['git+git://github.com/veg/hyphy-python.git#egg=HyPhy-0.1.1'],
       install_requires=[
           'HyPhy >=0.1.1',
           'Cython >=0.22.1',
