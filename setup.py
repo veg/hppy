@@ -9,7 +9,7 @@ from setuptools import setup
 
 sys.path.insert(0, join(split(abspath(__file__))[0], 'lib'))
 
-setup(name='hyphy-helper',
+setup(name='hppy',
       version='0.9.8',
       description='An intuitive HyPhy interface for Python',
       author='N Lance Hepler',
